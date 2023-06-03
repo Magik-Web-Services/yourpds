@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 20vh;
+}
+
+.form .form_con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 1.5rem;
+}
+
+.form .form_con #live_search {
+    position: relative;
+    margin: 0 auto;
+    width: 570px;
+    height: 45px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    border: 1px solid #878889;
+    box-shadow: none;
+    outline: none;
+}
+
+.form .form_con #search {
+    width: 75px;
+    height: 37px;
+    position: relative;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    background-color: #e0e3e7;
+    border: none;
+    right: 80px;
+    border-radius: 17px;
+}
+
+.form .form_con #search:hover {
+    background-color: #bcd3e9;
+}
+
+.form .form_con .search_icons {
+    z-index: 1;
+    position: relative;
+    left: 32px;
+}
+
+.form #inserts {
+    position: relative;
+    bottom: 3px;
+    left: 50px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: #e0e3e7;
+}
+
+.form #inserts:hover {
+    color: #000000;
+    background-color: #bcd3e9;
+    border-radius: 50%;
+}
+
+/* Tables */
+
+#table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+#table table,
+#table table tr td,
+#table table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#table table {
+    margin: 3rem auto;
+}
+
+#table tr td,
+#table tr th {
+    padding: 10px 25px;
+}
+
+#table tr td .fa-pen-to-square {
+    color: #85d62f;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#table tr td .fa-trash-can {
+    color: #d62f3d;
+    cursor: pointer;
+}
+
+#table tr td .fa-pen-to-square:hover {
+    color: #86e81d;
+}
+
+#table tr td .fa-trash-can:hover {
+    color: #ff0015;
+}
+
+#myTable_filter {
+    display: none !important;
+}
+
+.dataTables_wrapper {
+    max-width: 750px !important;
+    margin: 0 auto !important;
+}
+
+/* Edit Modals */
+#editForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+#editForm label {
+    width: 100%;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+#editForm label input {
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+}
+
+#editForm label #editProduct {
+    font-weight: 600;
+}
